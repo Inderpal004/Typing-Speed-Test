@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d1c1c;
+  position: relative;
+}
+
+.workspace {
+  width: 600px;
+  border: 1px solid #128ec0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-box {
+  width: 600px;
+  margin: 12px 0px 25px;
+}
+
+.input {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.input:disabled {
+  background-color: #ffffff;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.typing-text {
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+::selection {
+  user-select: none;
+}
+
+hr {
+  border: none;
+  outline: none;
+  height: 2px;
+  background-color: #128ec0;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px 2px;
+}
+
+.content-details {
+  color: #128ec0;
+  font-weight: 600;
+}
+
+.counting {
+  color: #ffffff;
+}
+
+.btn {
+  color: #ffffff;
+  background: #128ec0;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #165c78;
+}
+
+.active {
+  color: #ffffff;
+}
+
+.correct {
+  color: #109810;
+}
+
+.incorrect {
+  color: #ff0000;
+}
+
+.times-up-screen {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000cb;
+  visibility: hidden;
+}
+
+.times-up-btn {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #128ec0;
+    cursor: pointer;
+}
